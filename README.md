@@ -13,6 +13,8 @@ module.exports = JestAliasModuleLoader({
     'react': 'react/dist/react-with-addons',
     'react/addons': 'react/dist/react-with-addons',
   },
+  // used to resolve aliased paths to consistent directory
+  aliasesRootDir: __dirname
 });
 ```
 
