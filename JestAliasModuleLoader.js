@@ -3,10 +3,10 @@ var util = require('util');
 var assign = require('object.assign');
 
 function JestAliasModuleLoader(config) {
-  if (!config && config.aliasedModules) throw new Error('aliasedModules not defined');
+  if (!config || !config.aliasedModules) throw new Error('aliasedModules not defined');
 
   // a subclass of jest's HasteModuleLoader
-  // allows us to alias module requires 
+  // allows us to alias module requires
   function CustomModuleLoader() {
     HasteModuleLoader.apply(this, arguments); // super
   }
