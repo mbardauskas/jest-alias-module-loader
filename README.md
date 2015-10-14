@@ -18,12 +18,11 @@ module.exports = JestAliasModuleLoader({
 });
 ```
 
-To use this, just add a line to your Jest config (eg. in `package.json`):
+To use this, just add a line to your Jest config (eg. in `package.json`). Note that <rootDir> will be replaced with proper location automatically and is required.
 
 ```json
 {
   "jest": {
-    // note the <rootDir> which is literally required
     "moduleLoader": "<rootDir>/test/aliasedModuleLoader.js"
   }
 }
