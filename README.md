@@ -23,6 +23,7 @@ To use this, just add a line to your Jest config (eg. in `package.json`):
 ```json
 {
   "jest": {
+    // note the <rootDir> which is literally required
     "moduleLoader": "<rootDir>/test/aliasedModuleLoader.js"
   }
 }
